@@ -2,19 +2,27 @@
 
 Download-only repository: releases are published here by the build pipeline; there is no source code.
 
-## Latest: v0.0.21 (2026-10-14)
+## Latest: v0.0.22 (2026-10-14)
 
 - [Everything for players (main-full.zip)](https://github.com/muanarchy/releases-client/releases/latest/download/main-full.zip)
 - [Main.dll only (main.zip)](https://github.com/muanarchy/releases-client/releases/latest/download/main.zip)
 
-[Release page](https://github.com/muanarchy/releases-client/releases/tag/v0.0.21) · [all versions](https://github.com/muanarchy/releases-client/releases). Every release lists the SHA-256 of its files.
+[Release page](https://github.com/muanarchy/releases-client/releases/tag/v0.0.22) · [all versions](https://github.com/muanarchy/releases-client/releases). Every release lists the SHA-256 of its files.
 
-## Change log of v0.0.21
+## Windows warns about the download?
 
-#### Main v0.0.21
+New or rarely downloaded files get a SmartScreen / browser warning ("isn't commonly downloaded") because they are not code-signed yet. It does not mean the file is bad:
 
-Commit 2aded35. Players: unzip `main-full.zip` into the game folder (samples, docs, INSTALL.txt). The launcher uses `main.zip` (Main.dll only).
+- Browser: keep / "Keep anyway". SmartScreen: **More info** then **Run anyway**.
+- Check the file if you like: its SHA-256 is in `version.txt` on the release page.
+- The launcher updates itself and the mod afterwards, so this only happens on the first download.
 
-#### Changes since v0.0.20
-- Version: MAIN_VERSION string, VERSIONINFO resource from the CI CL defines, on-screen text, /version, F1 line (2aded35)
+## Change log of v0.0.22
+
+#### Main v0.0.22
+
+Commit dcf55d5. Players: unzip `main-full.zip` into the game folder (samples, docs, INSTALL.txt). The launcher uses `main.zip` (Main.dll only).
+
+#### Changes since v0.0.21
+- CI: releases README explains the Windows download warning (dcf55d5)
 
